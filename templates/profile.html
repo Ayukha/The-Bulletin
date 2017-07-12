@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student's Dashboard | Discussion - The Bulletin
+    </title>
+    <link href="../static/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css' />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    #profile {
+        text-decoration: none;
+        color: white;
+        background-color: rgba(175, 175, 175, 0.5);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+
+<body>
+    <sidebar>
+        <h3>Dashboard</h3>
+        <a id="notices" href="student_notices.html"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;&nbsp;Notices</a>
+        <a id="discussion" href="student_discussion.html"><i class="fa fa-comments"></i>&nbsp;&nbsp;&nbsp;Discussion</a>
+        <a id="inventory" href="student_inventory.html"><i class="fa fa-cubes"></i>&nbsp;&nbsp;&nbsp;Inventory</a>
+        <hr>
+        <a id="profile"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Profile</a>
+        <a id="contact" href="#"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;Contact</a>
+        <a id="logout" href="login.html"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;Log Out</a>
+    </sidebar>
+    <main>
+        <h1>THE BULLETIN</h1>
+        <h3>Stay connected anywhere and anytime!</h3>
+        <profile>
+            <img class="Thumbnail" src="assets/1.jpg" type="jpg" />
+            <prof>
+                <h4 id="firstname" class="info">
+                    First Name :
+                    <p>Ayush</p>
+                </h4>
+                <h4 id="lastname" class="info">
+                    Last Name :
+                    <p></p>
+                </h4>
+                <h4 id="rollnumber" class="info">
+                    Roll Number :
+                    <p></p>
+                </h4>
+                <h4 id="email" class="info">
+                    E-Mail :
+                    <p></p>
+                </h4>
+                <h4 id="username" class="info">
+                    Username :
+                    <p></p>
+                </h4>
+            </prof>
+        </profile>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+/* Scrollbr - Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #c0c2ce;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* scrollbar - Handle */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #afafaf;
+    -webkit-box-shadow: inset 0 0 6px #afafaf;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #afafaf;
+}
+
+* {
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: white;
+    background-color: rgb(212, 210, 220);
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .row {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(66, 139, 202);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header a {
+    padding: 5px 20px;
+    margin: 0 5px;
+    color: black;
+}
+
+.jumbotron {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+    background-color: #d2d4dc;
+    display: flex;
+    align-items: center;
+    height: 44em;
+}
+
+.box {
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Roboto;
+}
+
+h2 {
+    padding: 20px;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+form {
+    text-align: center;
+    margin: 16% 0;
+}
+
+form input {
+    position: relative;
+    padding: 0 5px;
+}
+
+.btn {
+    width: 90%;
+}
+
+input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.box a:hover {
+    text-decoration: none;
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* The Dashboard*/
+
+sidebar {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 21%;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+    background-color: #e5e6eb;
+}
+
+sidebar a {
+    display: block;
+    list-style: none;
+    text-align: left;
+    line-height: 0.7em;
+    padding: 10%;
+    color: black;
+    font-size: 1.15em;
+    -webkit-transition: background-color 0.4s;
+    transition: background-color 0.4s;
+}
+
+sidebar a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(66, 139, 202);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+sidebar h3 {
+    margin: 20% auto;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+sidebar hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*----------------------Main box--------------------------*/
+
+main {
+    display: block;
+    position: relative;
+    margin-left: 21%;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    z-index: 999;
+}
+
+main h3 {
+    font-size: 1.5em;
+    font-weight: 100;
+    position: relative;
+    top: -20px;
+    z-index: 999;
+}
+
+main section {
+    display: block;
+    position: relative;
+    min-height: 43.8em;
+    max-height: 43.8em;
+    height: auto;
+    overflow-y: auto;
+    background-color: #eee;
+}
+
+
+/*-------------------Notices----------------------*/
+
+main item {
+    display: block;
+    margin: 1.5% 1%;
+    height: 15em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+main item:hover {
+    box-shadow: 3px 3px rgba(100, 100, 100, 0.2);
+}
+
+item h5 {
+    font-family: Roboto;
+    text-align: left;
+    display: block;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    width: 90%;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+item p {
+    text-align: left;
+    display: block;
+    position: relative;
+    top: 10%;
+    left: 3%;
+    width: 90%;
+    font-weight: 200;
+    font-size: 1.1em;
+}
+
+
+/*----------Inventory Items (invent)--------------------*/
+
+main invent {
+    display: block;
+    margin: 1.5% 1%;
+    min-height: 10em;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+main invent:hover {
+    box-shadow: 3px 3px rgba(100, 100, 100, 0.2);
+}
+
+invent h5 {
+    font-family: Roboto;
+    text-align: left;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 2%;
+    width: 90%;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+invent p {
+    text-align: left;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 3%;
+    width: 90%;
+    font-weight: 200;
+    font-size: 1.1em;
+}
+
+invent button {
+    background-color: rgba(210, 212, 220, 0.5);
+    margin-top: 2%;
+    height: 1.8em;
+    width: 7em !important;
+    position: relative;
+    top: -8px;
+    left: 35%;
+}
+
+invent button:hover {
+    background-color: rgb(210, 212, 220);
+}
+
+button a {
+    position: relative;
+    top: -4px;
+    right: 12px;
+    text-decoration: none;
+    padding: 0.4em 2.3em;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*-----------Profile----------*/
+
+main profile {
+    display: block;
+    position: relative;
+    min-height: 43.8em;
+    max-height: 43.8em;
+    background-color: #eee;
+}
+
+profile img {
+    display: block;
+    position: relative;
+    top: 4em;
+    left: 4em;
+    height: 13em;
+    width: 13em;
+    border-radius: 5px;
+}
+
+profile img:hover {
+    box-shadow: 3px 3px rgba(100, 100, 100, 0.2);
+}
+
+profile prof {
+    display: block;
+    position: relative;
+    top: 5em;
+    width: 98%;
+    margin-left: 1%;
+    min-height: 20em;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+profile prof:hover {
+    box-shadow: 3px 3px rgba(100, 100, 100, 0.2);
+}
+
+h4.info {
+    margin-left: 2%;
+    margin-top: 2.6%;
+    text-align: left;
+    position: relative;
+    top: 10px;
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: Roboto;
+    letter-spacing: 0.1em;
+}
+
+prof p {
+    display: inline-block;
+    width: 80%;
+    margin-left: 1%;
+    font-weight: 300;
+}
+
+
+/*-------------------------ERROR-----------------------*/
+
+.error_body {
+    margin-top: 15%;
+    background-color: white;
+    border-radius: 5px;
+    height: 30em;
+}
+
+.error_body:hover {
+    box-shadow: 5px 5px rgba(100, 100, 100, 0.2);
+}
+
+.error_text {
+    position: relative;
+    right: 10%;
+    top: 2.5em;
+    height: auto;
+}
+
+.error_text h1 {
+    font-size: 7em;
+    font-weight: 700;
+}
+
+.error_text h3 {
+    font-size: 2em;
+    font-family: Roboto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.error_body button {
+    display: block;
+    height: 2.6em;
+    background-color: rgb(210, 212, 220);
+}
+
+.error_body a:hover {
+    background-color: rgba(210, 212, 220, 0.5);
+    color: white;
+}
+
+.error_body a {
+    height: 2.6em;
+    top: -7px;
+    display: block;
+    width: 105%;
+    font-weight: 600;
+    margin: 0 auto;
+}

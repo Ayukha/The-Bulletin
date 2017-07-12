@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="../static/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet' type='text/css'>
+    <title>
+        Log In - The Bulletin
+    </title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-4">THE BULLETIN</h1>
+            <nav class="col-sm-8 text-right">
+                <a href="signup.html">Sign Up</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div class="box">
+            <h2>
+                <strong>Log In</strong>
+            </h2> 
+           
+              <form method="post" action="">
+           {%import "bootstrap/wtf.html" as wtf%}
+  <dl>
+    {{ form.hidden_tag() }}
+
+    {{ wtf.form_field(form.username) }}
+
+    {{ wtf.form_field(form.password) }}
+
+    {{ wtf.form_field(form.remember) }}
+
+  </dl>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+
+    <footer class="container">
+        <p>
+            &copy; Summer Project
+        </p>
+
+    </footer>
+</body>
+
+</html>
