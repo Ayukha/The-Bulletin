@@ -100,12 +100,31 @@ h2 {
 
 form {
     text-align: center;
-    margin: 16% 0;
+    margin: 8% 0;
 }
 
 form input {
     position: relative;
     padding: 0 5px;
+}
+
+form input:focus {
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-right: none;
+}
+
+form select {
+    border: none;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+form select:focus {
+    border: none;
+    outline: none;
+    border: none;
 }
 
 .btn {
@@ -247,6 +266,25 @@ item p {
     width: 90%;
     font-weight: 200;
     font-size: 1.1em;
+}
+
+#add_button,
+#delete_button {
+    width: 15%;
+    margin: 20px 40px 5px 40px;
+}
+
+#add_button:hover,
+#delete_button:hover,
+#add_button:active,
+#delete_button:active {
+    text-decoration: none;
+}
+
+#add_button:focus,
+#delete_button:focus {
+    outline: none;
+    border: none;
 }
 
 
